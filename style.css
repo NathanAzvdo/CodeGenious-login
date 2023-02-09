@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #fafafa;
+}
+.center{
+    width: 40%;
+    margin: 0 auto;
+    border-radius: 15px;
+    box-shadow:  1px 1.3px 2.5px 2.7px rgba(139, 192, 222, .3);
+    margin-top: 4rem;
+    background-color: #f7f7f7;
+    text-align: center;
+   
+    
+}
+.icon{
+    color: #fafafa;
+}
+.cont{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    padding-top: 30px;
+}
+.pain{
+    text-align: center;
+    margin-left: 10px;
+}
+.pain h1{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: x-large;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+.pain input{
+   
+    width: 200px;
+    height: 30px;
+}
+.pain button,.pain input{
+    border-radius: 7px;
+    border: none;
+    box-shadow: 1px 1px .9px .95px rgba(2, 117, 216, .3);
+    padding: 3%;
+}
+.animation{
+    width: 300px;
+    height: 300px;
+}
+.pain button{
+    margin-top: 30px;
+    width: 190px;
+    height: 30px;
+    margin-bottom: 30px;
+    background-color: rgba(139, 192, 222, .3);
+    font-size: larger;
+    cursor: pointer;
+    transition: .4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.pain button:hover{
+    transform: scale(1.02);
+}
+@media(max-width:1300px) {
+    .center{
+        width: 80%;
+    }  
+}
+@media(max-width:850px){
+    .pain{
+        margin-left: 0;
+    }
+    .cont{
+        
+        flex-direction: column;
+        align-items: center;
+    }
+    .animation{
+        width: 40%;
+        height: 40%;
+    }
+    .center{
+        width: 90%;
+    }
+}
+@media(max-width:500px){
+    .animation{
+        width: 55%;
+        height: 55%;
+    }
+    .pain input{
+        width: 100%;
+    }
+    .pain button{
+        margin: 10% auto;
+    }
+}
